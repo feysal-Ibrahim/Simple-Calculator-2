@@ -1,3 +1,4 @@
+//behind the scenes below here.(backend)//
 var add = function(number1, number2) {
       return number1 + number2;
     };
@@ -13,7 +14,7 @@ var add = function(number1, number2) {
     var divide = function(number1, number2) {
       return number1 / number2;
     };
-
+    //user interface below here
     $(document).ready(function() {
       $("form#add").submit(function(event) {
         event.preventDefault();
@@ -23,3 +24,4 @@ var add = function(number1, number2) {
         $("#output").text(result);
       });
     });
+
